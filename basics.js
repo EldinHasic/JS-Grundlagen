@@ -32,3 +32,7 @@ function formatToCurrency(num) { // number to currency converter with 2 decimal 
 
 console.log(formatToCurrency(33550336.345));
 // Bonus Task done
+
+let title = document.getElementById("website_title");
+
+console.log(title.innerHTML);
