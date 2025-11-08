@@ -34,5 +34,12 @@ console.log(formatToCurrency(33550336.345));
 // Bonus Task done
 
 let title = document.getElementById("website_title");
-
 console.log(title.innerHTML);
+
+let div = document.getElementById("test_div");
+let btn = document.createElement("button");
+btn.id = "button_test";
+btn.textContent = "Klick mich";
+div.appendChild(btn);
+
+
