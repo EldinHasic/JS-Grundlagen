@@ -43,3 +43,4 @@ btn.textContent = "Klick mich";
 div.appendChild(btn);
 
 document.getElementById("p_test").setAttribute("title",value = "Minecraft");
+document.getElementById("p_test2").classList.add("class_test");
