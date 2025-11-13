@@ -25,7 +25,7 @@ console.log(countCharacters("banana"));
 
 
 function formatToCurrency(num) { // number to currency converter with 2 decimal places
-    let value = (num.toLocaleString("de-DE", {style:"currency", currency:"EUR"}));
+    let value = (num.toLocaleString("de-DE", { style: "currency", currency: "EUR" }));
     num = num.toFixed(2);
     return value;
 }
@@ -33,14 +33,21 @@ function formatToCurrency(num) { // number to currency converter with 2 decimal 
 console.log(formatToCurrency(33550336.345));
 // Bonus Task done
 
-let title = document.getElementById("website_title");
+let title = document.getElementById("website_title"); // 
 console.log(title.innerHTML);
 
-let div = document.getElementById("test_div");
+let div = document.getElementById("test_div"); // add button in div 
 let btn = document.createElement("button");
 btn.id = "button_test";
 btn.textContent = "Klick mich";
 div.appendChild(btn);
 
-document.getElementById("p_test").setAttribute("title",value = "Minecraft");
-document.getElementById("p_test2").classList.add("class_test","classtest");
+document.getElementById("p_test").setAttribute("title", value = "Minecraft"); // add title to p
+
+function toggleclass() {
+   let value = document.getElementById("display-none");
+    value.classList.toggle("d_none"); // funktioniert nicht / vid 6
+    return value;
+}
+
+toggleclass("d_none");
