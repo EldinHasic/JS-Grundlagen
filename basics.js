@@ -44,10 +44,8 @@ div.appendChild(btn);
 
 document.getElementById("p_test").setAttribute("title", value = "Minecraft"); // add title to p
 
-function toggleclass() {
-   let value = document.getElementById("display-none");
-    value.classList.toggle("d_none"); // funktioniert nicht / vid 6
-    return value;
+function toggleclass(id){
+   document.getElementById(id).classList.toggle("d_none"); // function id not working
 }
 
-toggleclass("d_none");
+toggleclass("display_none");
