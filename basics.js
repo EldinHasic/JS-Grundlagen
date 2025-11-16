@@ -44,8 +44,12 @@ div.appendChild(btn);
 
 document.getElementById("p_test").setAttribute("title", value = "Minecraft"); // add title to p
 
-function toggleclass(id){
-   document.getElementById(id).classList.toggle("d_none"); // function id not working
+function toggleclass(){
+   document.getElementById("display-none").classList.toggle("d_none"); // function id not working
 }
 
 toggleclass("display_none");
+
+function countCharacters(inputreader) { // input logout test
+    let value = (inputreader);
+    return value;}
