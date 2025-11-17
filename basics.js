@@ -50,6 +50,6 @@ function toggleclass(){
 
 toggleclass("display_none");
 
-function countCharacters(inputreader) { // input logout test
-    let value = (inputreader);
-    return value;}
+
+
+
