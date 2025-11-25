@@ -44,12 +44,15 @@ div.appendChild(btn);
 
 document.getElementById("p_test").setAttribute("title", value = "Minecraft"); // add title to p
 
-function toggleclass(){
-   document.getElementById("display-none").classList.toggle("d_none"); // function id not working
+function toggleclass(id) {
+    document.getElementById(id).classList.toggle("d_none"); // function id not working
 }
 
-toggleclass("display_none");
+toggleclass("p_display_test");
 
 
+function lampToggle() {
+    document.getElementById("lamp-p").classList.toggle("background-color-green");
+}
 
 

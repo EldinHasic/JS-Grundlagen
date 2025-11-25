@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Grundlagen</title>
     <style>
-        #d_none {
-            display: none;
+        .d_none {
+          display: none;
+        }
+
+        .background-color-green {
+       background-color: green;
         }
     </style>
 </head>
@@ -16,7 +20,10 @@
     <h1 id="website_title">Der Titel der Website</h1>
     <div id="test_div"></div>       
     <p id="p_test">Mc</p>
-    <p id="display-none">Green</p>
+    <p id="lamp-p">Lampe1</p>
+    <div></div>
+    <button onclick="lampToggle()" id="button1">Licht</button>
+    <p id="p_display_test">Green</p>
     <input id="input_test" type="text" onkeydown="console.log(document.getElementById('input_test').value)"></input>
 </body>
 <script src="basics.js"></script> 
