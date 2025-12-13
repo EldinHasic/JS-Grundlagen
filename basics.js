@@ -107,7 +107,7 @@ console.log(addElementToStart(['b', 'c', 'd'], 'a')); // ['a', 'b', 'c', 'd']
 //"slice" spedific elements out of an array and return with a new array//
 
 function getSubArray(array, start, end) {
-   let newarray = array.slice(start, end);
+    let newarray = array.slice(start, end);
     return newarray;
 }
 
@@ -123,3 +123,19 @@ function joinArray(array, separator) {
 
 console.log(joinArray(['apple', 'banana', 'cherry'], ', ')); // "apple, banana, cherry"
 console.log(joinArray([1, 2, 3, 4], ' - ')); // "1 - 2 - 3 - 4"
+
+//for loop excersises//
+
+//add elements in array together//
+
+let sum = 0;
+function sumArray(array) {
+    for (let index = 0; index < array.length; index++) {
+        sum += array[index];
+    }
+    return sum;
+}
+
+console.log(sumArray([3, 7, 1, 4])); // Erwartete Ausgabe: 15 (3 + 7 + 1 + 4)
+sum = 0;
+console.log(sumArray([1, 2, 3, 4, 5])); // Erwartete Ausgabe: 15 (1 + 2 + 3 + 4 + 5)
