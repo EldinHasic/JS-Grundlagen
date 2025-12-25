@@ -7,25 +7,33 @@
     <title>JS Grundlagen</title>
     <style>
         .d_none {
-          display: none;
+            display: none;
         }
 
         .background-color-green {
-       background-color: green;
+            background-color: green;
         }
     </style>
 </head>
 
 <body>
     <h1 id="website_title">Der Titel der Website</h1>
-    <div id="test_div"></div>       
+    <div id="test_div"></div>
     <p id="p_test">Mc</p>
     <p id="lamp-p">Lampe1</p>
     <div></div>
     <button onclick="lampToggle()" id="button1">Licht</button>
     <p id="p_display_test">Green</p>
     <input id="input_test" type="text" onkeydown="console.log(document.getElementById('input_test').value)"></input>
+
+    <!--debugger-->
+    <p id="debugger_log">0</p>
+    <button onclick="init()">Start Code</button>
+    <!--debugger end-->
+
 </body>
-<script src="basics.js"></script> 
+<script src="basics.js"></script>
 <script src="array.js"></script>
+<script src="debugger.js"></script>
+
 </html>
