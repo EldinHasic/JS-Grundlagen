@@ -60,3 +60,22 @@ return newArr;
 
 console.log(printEveryThirdElement([1, 2, 3, 4, 5, 6, 7, 8, 9])); // Erwartete Ausgabe: 1, 4, 7
 console.log(printEveryThirdElement(['a', 'b', 'c', 'd', 'e', 'f'])); // Erwartete Ausgabe: 'a', 'd'
+
+//5//
+function isPrimefunction(n) {
+let isPrime = true;
+if (n <= 1) {
+    isPrime = false;
+} else {
+    for (let i = 2; i * i <= n; i++) {
+        if (n % i === 0) {
+            isPrime = false;
+            break;
+        }
+    }
+}
+console.log(isPrime);
+}
+
+console.log(isPrimefunction(7)); // Erwartete Ausgabe: true (7 ist eine Primzahl)
+console.log(isPrimefunction(4)); // Erwartete Ausgabe: false (4 ist keine Primzahl)
